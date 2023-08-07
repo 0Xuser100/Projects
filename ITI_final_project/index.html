@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+
+    <!-- start header  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100">
+        <div class="container">
+            <a class="navbar-brand" href="#">My App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#register">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end header -->
+
+    <!-- start gallery -->
+    <div class="gallery mt-5 " id="gallery">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/one.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/20567484.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/three.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- end gallery -->
+
+
+    <!-- start about  -->
+
+    <div class="about mt-5 mb-5" id="about">
+        <div class=" container d-flex justify-content-center align-items-center gap-3">
+            <div class="left">
+                <img class="w-100" src="./images/me.png" alt="" srcset="">
+            </div>
+            <div class="right">
+                <h2>I Am Mahmoud Abdelhamed </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum fugit adipisci atque provident
+                    nesciunt facilis necessitatibus assumenda suscipit numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum fugit adipisci atque provident
+                    nesciunt facilis necessitatibus assumenda suscipit numquam.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end about  -->
+
+
+    <!-- start register -->
+
+    <div class=" register" id="register">
+        <form id="form" class="container w-50 mt-5 mb-5">
+            <h2 class="fw-bold text-capitalize">register now</h2>
+            <br>
+            <div class="form-group">
+                <label class="text-capitalize" for="firstname">first name</label>
+                <input  type="text" class="form-control" id="firstname" aria-describedby="emailHelp"
+                    placeholder="Enter first name" maxlength="15" minlength="3">
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="text-capitalize" for="lastname">last name</label>
+                <input  type="text" class="form-control" id="lastname" aria-describedby="emailHelp"
+                    placeholder="Enter last name">
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="text-capitalize" for="username">user name</label>
+                <input  type="text" class="form-control" id="username" aria-describedby="emailHelp"
+                    placeholder="Enter username" maxlength="19" minlength="7">
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="text-capitalize" for="password">password</label>
+                <input  type="password" class="form-control" id="password" aria-describedby="emailHelp"
+                    placeholder="Enter password" minlength="8">
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label class="text-capitalize" for="email">Email address</label>
+                <input  type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label class="text-capitalize" for="age"> age</label>
+                <input  type="number" min="16" max="45" class="form-control" id="age" aria-describedby="emailHelp"
+                placeholder="Enter your age">
+            </div>
+            <br>
+            
+            <div class="form-group d-flex gap-3 justify-content-center align-items-center ">
+                <label class="text-capitalize" >country </label>
+                <select class="form-select" name="country" id="country" >
+                    <option value="menofia">Menofia</option>
+                    <option value="cairo">Cairo</option>
+                    <option value="alex">Alex</option>
+                </select>
+            </div>
+            <br>
+            
+
+            <div class="genderr form-group d-flex gap-3">
+                <label class="text-capitalize" >gender</label>
+                <div>
+                    <input  type="radio" id="male" name="gender" value="male">
+                    <label for="male"  class="text-capitalize">male</label><br>
+                    <input  type="radio" id="female" name="gender" value="female">
+                    <label for="female" class="text-capitalize">female</label><br>
+                </div>
+            </div>
+            <br>
+
+            <div class="interestss form-group d-flex gap-3">
+                <label class="text-capitalize" >intersts</label>
+                <div>
+                    <input type="checkbox" id="read" name="intersts" value="read">
+                    <label for="read"  class="text-capitalize">read books</label><br>
+                    <input type="checkbox" id="code" name="intersts" value="code">
+                    <label for="code" class="text-capitalize">codeing</label><br>
+                    <input type="checkbox" id="play" name="intersts" value="play">
+                    <label for="play" class="text-capitalize">play games</label><br>
+                </div>
+            </div>
+            <br>
+
+
+            <button type="submit" class=" btn btn-primary mt-2 ">Submit</button>
+        </form>
+    </div>
+
+    <!-- end register -->
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+	top: 0;
+	z-index: 5000;
+	background-color: white;
+}
+
+
+.about > div{
+	flex-wrap: wrap;
+}
+.about .left{
+	flex: 1;
+	min-width: 120px;
+	max-width: 200px;
+}
+.about .right{
+	flex: 2;
+	min-width: 300px;
+}
+
+
+.thanks{
+	height: 100vh;
+}
+
+.not-valid{
+	border: 1px solid red;
+	padding: 10px;
+	border-radius: 6px;
+}
